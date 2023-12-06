@@ -1,4 +1,4 @@
 #!/bin/bash
-define_path="/root/tmp/"
+cd /tmp
 mkdir my_first_directory
 
