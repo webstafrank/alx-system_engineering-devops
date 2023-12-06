@@ -1,0 +1,4 @@
+#!/bin/bash
+define_path="/tmp"
+rm -r my_first_directory
+

@@ -1,5 +1,5 @@
 #!/bin/bash
-define_path=" /tmp"
+define_path="/tmp"
 mkdir my_first_directory
 mv my_first_directory /tmp
 
