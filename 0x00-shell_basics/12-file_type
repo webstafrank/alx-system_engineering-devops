@@ -1,0 +1,10 @@
+#!/bin/bash
+define_path="/tmp"
+touch iamafile
+mv iamafile /tmp
+if [ -e "$define_path"]; then  
+file_type=$(iamafile -b "$define_path")
+echo "$file_type"
+else 
+	echo "error"
+fi
