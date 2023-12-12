@@ -1,1 +1,2 @@
 #!/bin/bash
+find  e -type f -exec ls -lt {} + | pr | head -10
