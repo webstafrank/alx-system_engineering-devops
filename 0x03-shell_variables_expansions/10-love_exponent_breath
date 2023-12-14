@@ -1,1 +1,6 @@
 #!/bin/bash
+BREATH="4"
+LOVE="3"
+echo $((4**3))
+
+
