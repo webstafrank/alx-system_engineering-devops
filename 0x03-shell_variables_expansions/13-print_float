@@ -1,1 +1,3 @@
- #!/bin/bash
+#!/bin/bash
+NUM="0"
+printf "%.2f \n" $NUM
