@@ -1,4 +1,7 @@
 #!/bin/bash
-define_path=" /tmp"
+define_path="/tmp/my_first_directory/"
+
+cd "/my_first_directory/"	|| exit
+
 touch betty 
-mv betty /tmp/my_first_directory/
+
