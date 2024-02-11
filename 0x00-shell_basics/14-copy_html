@@ -1,7 +1,7 @@
 #!/bin/bash
 define_source=$(pwd)
-define_destination=$(0x00-shell_basics "alx-system_engineering-devops)
-htmls=$( find "$alx-system_engineering-devops" -maxdepth 1 -type f -name "*.html"
+define_destination=$(0x00-shell_basics "alx-system_engineering-devops")
+htmls=$( find "$alx-system_engineering-devops" -maxdepth 1 -type f -name "*.html")
 
 #looping thru each html file
 for file in $htmls do;
