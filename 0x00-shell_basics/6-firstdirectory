@@ -1,5 +1,11 @@
 #!/bin/bash
-define_path="/tmp"
-mkdir my_first_directory
-mv my_first_directory /tmp
+define_path="/root/tmp/"
+#the path to be followed
+cd "/tmp"	|| exit
+#moving into the directory
+mkdir "/my_first_directory/"
+
+
+
+
 
