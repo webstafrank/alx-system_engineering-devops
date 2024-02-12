@@ -1,0 +1,3 @@
+#!/bin/bash
+find *[A-z]* -maxdepth 1 -type f -exec mv{} /tmp/u \;
+
