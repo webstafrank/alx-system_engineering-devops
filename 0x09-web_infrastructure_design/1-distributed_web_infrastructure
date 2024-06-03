@@ -1,0 +1,17 @@
+Designing a Three-Server Web Infrastructure with Load Balancer
+
+User Accessing the Website - user opens a web browser and enters "www.foobar.com".
+DNS translates "www.foobar.com" to the IP address of the load balancer.
+HAproxy receives the request, terminates SSL, and distributes it to one of the web servers using a load-balancing algorithm.
+The chosen Nginx web server processes the request and forwards it to the application server if dynamic content is needed.
+The application server runs the application code, processes the request, and interacts with the database if necessary.
+The MySQL database stores and retrieves data as requested by the application server.
+Response to user. The application server sends the response back to the web server.The web server sends the response back to the load balancer. The load balancer forwards the response to the user's browser.
+Firewalls: Protect each server from unauthorized access and malicious traffic.
+SSL Certificate: Encrypted communication, ensuring data security and privacy.
+Monitoring Clients: Collect data for monitoring system performance and detecting issues.
+Firewalls Control and filter traffic to protect servers from unauthorized access and attacks.Apply security rules to permit or deny traffic based on criteria such as IP addresses, ports, and protocols.
+
+
+
+
