@@ -1,0 +1,18 @@
+Designing a One-Server Web Infrastructure with a LAMP Stack
+User accesses the browser and types “www.foobar.com”
+DNS translates the http:www.foobar.com to an ip address which the browser then sends a request for.
+Server handling the request - the server with the requested ip address receives the request.
+The web server (Nginx) listens for the request on either HTTP or HTTPS. Upon processing the request, it sends it to the application server.
+ The application server executes the logic in the application code and it can send queries to the database if any.
+MySql stores or retrieves data as requested by the application server. The application server processes the data and gives a response.
+The application server sends the response to the web server and the web server returns a website.
+
+Notes:
+Server - A physical or virtual machine that hosts all the components (web server, application server, database).
+
+Domain names provide a human readable name that is easy for users.
+
+Single Point of Failure (SPOF)- The entire website depends on a single server. If it fails, the website becomes unavailable.
+Deploying new code or restarting the web server can cause downtime since there is no redundancy
+
+
