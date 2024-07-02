@@ -1,0 +1,36 @@
+#!/usr/bin/ennv bash
+
+# Install Nginx
+apt-get update
+apt-get install -y nginx
+
+# Ensure Nginx is running
+service nginx start
+
+# Configure Nginx to listen on port 80
+echo "server {
+    listen 80;
+    server_name _;
+    root /var/www/html;
+
+    location / {
+        index index.html;
+    }
+
+    location = / {
+        echo \"Hello World!\";
+    }
+}" > /etc/nginx/sites-available/default
+
+# Reload Nginx configuration
+service nginx reload
+
+# Verify Nginx configuration with curl
+response=$(curl -s http://localhost)
+expected="Hello World!"
+
+if [[ "$response" =~ "$expected" ]]; then
+    echo "Nginx successfully installed and configured!"
+else
+    echo "Failed to verify Nginx configuration."
+fi
