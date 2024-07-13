@@ -1,2 +1,8 @@
 #!/bin/bash
-ln -s /bin/ls /alx-system_engineering-devops/0x00-shell_basics __ls__
+
+if [ -L /tmp/iamafile ]; then
+    echo "/tmp/iamafile is a symbolic link"
+else
+    echo "/tmp/iamafile is not a symbolic link"
+fi
+
