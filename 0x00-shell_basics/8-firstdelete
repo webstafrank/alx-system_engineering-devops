@@ -1,6 +1,3 @@
 #!/bin/bash
-define_path="/tmp"
-cd /tmp/my_first_directory/
-rm betty
 
-
+rm /tmp/my_first_directory/betty
