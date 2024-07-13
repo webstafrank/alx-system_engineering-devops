@@ -1,0 +1,5 @@
+#!/bin/bah
+
+cp /bin/ls .
+file -m school.mgc *
+
