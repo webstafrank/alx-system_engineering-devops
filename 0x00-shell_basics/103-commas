@@ -1,0 +1,3 @@
+#!/bin/bash
+
+ls -a1p | awk '{printf "%s, ", $0}' | sed 's@/\(, \)\?$@/@'
